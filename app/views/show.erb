@@ -1,0 +1,6 @@
+<h1><%= @article.title%></h1>
+<li><%= @article.content%></li>
+<form method="POST" action="/articles/<%= @article.id %>">
+<input id="hidden" type="hidden" name="_method" value="DELETE"/> #overide post method in order to carry out delete action
+<input type="submit" value="delete"/>
+</form>

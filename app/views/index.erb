@@ -1,0 +1,5 @@
+<h1>All Articles</h1>
+<% @articles.each do |article| %> #iterate over all the articles
+    <h1><%= article.title%></h1> #display attribute by calling ar reader method
+    <li><%= article.content%></li> #display attribute by calling ar reader method
+    <%end%> 
